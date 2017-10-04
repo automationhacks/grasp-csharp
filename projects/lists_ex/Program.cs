@@ -17,8 +17,8 @@ namespace lists_ex
         }
 
         public static void AnotherList() {
-            List<float> floatList = new List<float>() {1.0, 2.0, 3.3, 4.8};
-            foreach (float el in floatList) {
+            List<double> floatList = new List<double>() {1.0, 2.0, 3.3, 4.8};
+            foreach (double el in floatList) {
                 Console.WriteLine($"{el}");
             }
         }
