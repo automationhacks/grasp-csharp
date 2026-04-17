@@ -1,4 +1,5 @@
-﻿namespace Fundamentals;
+﻿// See https://aka.ms/new-console-template for more information
+namespace Fundamentals;
 
 class Program
 {
@@ -8,4 +9,4 @@ class Program
     }
 }
 
-// See https://aka.ms/new-console-template for more information
+
