@@ -44,6 +44,37 @@ To install [xunit]
 dotnet new install xunit.v3.templates
 ```
 
+To create a new unit test project, with below hierarchy, change dir to tests directory and then run `dotnet new xunit3`
+
+```text
+MySolution/
+├── MySolution.sln
+├── src/
+│   └── MyProject/
+│       ├── MyProject.csproj
+│       └── Calculator.cs
+└── tests/
+    └── MyProject.Tests/
+        ├── MyProject.Tests.csproj  <-- Created with 'dotnet new xunit3'
+        ├── CalculatorTests.cs
+        └── xunit.runner.json       <-- Configuration for xUnit v3
+```
+
+```shell
+dotnet new xunit3
+```
+
+To create a new solution, cd to it
+
+```shell
+# Create a new solution
+dotnet new sln -n Fundamentals
+# Add a project to a solution
+dotnet sln Fundamentals.slnx add src/Fundamentals/Fundamentals.csproj
+# Add tests folder to the solution
+dotnet sln Fundamentals.slnx add tests/Fundamentals.Tests/Fundamentals.Tests.csproj
+```
+
 To build
 
 ```shell
