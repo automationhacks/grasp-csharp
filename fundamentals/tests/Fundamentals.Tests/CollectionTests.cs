@@ -23,6 +23,7 @@ public class CollectionTests
         // Here ^1 refers to the last number in the collection
         Assert.Equal(10, anotherNumbers[^1]);
         // Use .. to define a range
+        // Range end is not inclusive
         Assert.Equal([2, 3, 4], anotherNumbers[1..4]);
     }
 }
