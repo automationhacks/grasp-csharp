@@ -34,6 +34,7 @@ public class PatternMatchingTest
         (left, right) switch
         {
             (true, true) => true,
+            // We can use use _ as a catch all for the remaining cases
             (_, _) => false
         };
 
