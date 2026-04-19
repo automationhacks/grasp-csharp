@@ -1,12 +1,21 @@
 public class PatternMatchingTest
 {
     [Fact]
-    public void PatternMatchTest()
+    public void PatternMatchOrTest()
     {
         Assert.True(Or(true, true));
         Assert.True(Or(true, false));
         Assert.True(Or(false, true));
         Assert.False(Or(false, false));
+    }
+
+    [Fact]
+    public void PatternMatchAndTest()
+    {
+        Assert.True(ReducedAnd(true, true));
+        Assert.False(ReducedAnd(true, false));
+        Assert.False(ReducedAnd(false, true));
+        Assert.False(ReducedAnd(false, false));
     }
 
     // We can write a single line method
@@ -20,5 +29,12 @@ public class PatternMatchingTest
             (false, true) => true,
             (false, false) => false
         };
-    
+
+    public static bool ReducedAnd(bool left, bool right) =>
+        (left, right) switch
+        {
+            (true, true) => true,
+            (_, _) => false
+        };
+
 }
