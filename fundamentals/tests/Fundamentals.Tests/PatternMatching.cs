@@ -1,3 +1,5 @@
+namespace Fundamentals.Tests;
+
 public class PatternMatchingTest
 {
     [Fact]

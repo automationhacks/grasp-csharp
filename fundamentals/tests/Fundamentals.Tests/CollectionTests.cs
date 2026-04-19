@@ -1,3 +1,4 @@
+namespace Fundamentals.Tests;
 public class CollectionTests
 {
    [Fact]
