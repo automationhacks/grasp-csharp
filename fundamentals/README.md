@@ -89,5 +89,11 @@ To build and run
 dotnet run
 ```
 
+To run tests within a specific project
+
+```shell
+dotnet run --project tests/Fundamentals.Tests/Fundamentals.Tests.csproj
+```
+
 [Tour of Csharp]: https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview
 [xunit]: https://xunit.net/docs/getting-started/v3/getting-started
