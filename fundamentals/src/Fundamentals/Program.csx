@@ -1,6 +1,5 @@
 ﻿#!/usr/bin/env dotnet
 // See https://aka.ms/new-console-template for more information
-namespace Fundamentals;
 
 class Program
 {

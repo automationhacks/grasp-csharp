@@ -1,6 +1,6 @@
 namespace Fundamentals;
 
-public class Calculator()
+public class Calculator
 {
     public int Add(int first, int second)
     {

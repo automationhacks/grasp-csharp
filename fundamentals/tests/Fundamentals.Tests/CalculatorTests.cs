@@ -8,6 +8,6 @@ public class CalculatorTests
     public void AddTest()
     {
         var calculator = new Calculator();
-        Assert.Equal(calculator.Add(5, 5), 10);
+        Assert.Equal(10, calculator.Add(5, 5));
     }
 }
