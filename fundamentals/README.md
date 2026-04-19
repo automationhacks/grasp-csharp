@@ -73,6 +73,8 @@ dotnet new sln -n Fundamentals
 dotnet sln Fundamentals.slnx add src/Fundamentals/Fundamentals.csproj
 # Add tests folder to the solution
 dotnet sln Fundamentals.slnx add tests/Fundamentals.Tests/Fundamentals.Tests.csproj
+# Link tests folder to src folder
+dotnet add tests/Fundamentals.Tests/Fundamentals.Tests.csproj reference src/Fundamentals/Fundamentals.csproj
 ```
 
 To build
